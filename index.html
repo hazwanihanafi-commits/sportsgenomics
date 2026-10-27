@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#091e31">
+<meta name="description" content="Interactive MSc Clinical Exercise Science textbook: genetics, Mendelian inheritance, molecular biology and clinical exercise genomics.">
+<title>Clinical Exercise Genomics · Interactive Textbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="logo">⌁</span><div><b>GENOME<span>/</span>EXERCISE</b><small>INTERACTIVE TEXTBOOK</small></div></div><nav><button id="overviewButton">Overview</button><button id="quizButton">Knowledge check</button><span>SELF-PACED LEARNING</span></nav><button id="menuButton" aria-label="Open contents">☰</button></header>
+<div class="shell"><aside id="sidebar"><div class="side-head"><span>CONTENTS</span><button id="menuClose" aria-label="Close contents">×</button></div><button class="overview-nav" id="sideOverview">◈ &nbsp; Course overview</button><div id="chapterList"></div><div class="progress-block"><div><b>Learning progress</b><strong id="progressNumber">0%</strong></div><div class="progress-track"><div id="progressFill"></div></div><small id="progressText">Lessons explored</small></div></aside><main id="main" tabindex="-1"></main></div>
+<dialog id="zoomDialog"><button id="zoomClose" aria-label="Close large slide">×</button><img id="zoomImage" alt="Enlarged lecture slide"></dialog>
+<script defer src="extra-chapters.js"></script>
+<script defer src="app.js"></script>
+</body>
+</html>
